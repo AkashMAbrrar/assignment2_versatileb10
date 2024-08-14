@@ -258,7 +258,7 @@ header {
 }
 .run_contents {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 .run_content {
@@ -480,6 +480,7 @@ input {
 .cards_holder {
   margin-top: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   gap: 20px;
@@ -597,3 +598,130 @@ hr {
 /* footer section end here */
 
 /* media quarry for mobile devices */
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .home_banner {
+    min-height: 10vh;
+    /* padding: 10rem 8% 2rem; */
+    padding-top: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgb(17, 17, 17),
+      rgba(119, 119, 119, 0) 100%
+    );
+  }
+  header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: linear-gradient(
+      180deg,
+      rgb(17, 17, 17),
+      rgba(119, 119, 119, 0) 100%
+    );
+    backdrop-filter: blur(10px);
+  }
+  .home_content h2 {
+    font-size: 3rem;
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  /* habit section */
+  .habit_holder {
+    margin-top: 30px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  /* run an extra mile */
+  .run_img img {
+    width: 100%;
+    height: 312px;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  .run_contents {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+
+  .run_contents {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .grid_img {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  .bmi_items {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    margin-top: 80px;
+  }
+  .input_fields {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team_section {
+    width: 100%;
+    height: 620px;
+    border-radius: 10px;
+    margin: 100px auto;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bmi_container {
+    display: none;
+  }
+  .card_section {
+    display: none;
+  }
+  footer {
+    position: absolute;
+    top: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 88px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
