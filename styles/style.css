@@ -17,7 +17,6 @@
 }
 html {
   font-size: 62.5%;
-  /* overflow: hidden; */
 }
 body {
   background-color: var(--bg-color);
@@ -595,3 +594,6 @@ hr {
   text-align: center;
   margin-top: 20px;
 }
+/* footer section end here */
+
+/* media quarry for mobile devices */
